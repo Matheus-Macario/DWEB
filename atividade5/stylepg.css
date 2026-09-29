@@ -1,0 +1,95 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+div
+{
+    background-color: #000000;
+    width: 500px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    h2::before{
+        content: "Preto"
+    }
+}
+
+@media (max-width: 420px)
+{
+    div
+    {
+        background-color: #254E5C;
+        h2::before{
+            content: "Azul-teal"
+        }
+    }
+}
+
+@media (min-width: 421px) and (max-width: 768px)
+{
+    div
+    {
+        background-color: #DB934C;
+        h2::before{
+            content: "Laranja pastel quente"
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px)
+{
+    div
+    {
+        background-color: #E734F4;
+        h2::before{
+            content: "Magenta cibernético"
+        }
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1080px)
+{
+    div
+    {
+        background-color: #CF6C67;
+        h2::before{
+            content: "Pedra Vermelha Alaranjada"
+        }
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1366px)
+{
+    div
+    {
+        background-color: #6150A0;
+        h2::before{
+            content: "Ametista profunda"
+        }
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1920px)
+{
+    div
+    {
+        background-color: #E8C350;
+        h2::before{
+            content: "Ouro Thai"
+        }
+    }
+}
+
+@media (min-width: 1921px)
+{
+    div
+    {
+        background-color: #56AE58   ;
+        h2::before{
+            content: "Gratidão Verde"
+        }
+    }
+}
