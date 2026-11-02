@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500;800&display=swap");
+
+
+:root {
+    --fundo: #14213d;
+    --texto: #f4f1ff;
+    --pedra: #8d99ae;
+    --papel: #f8f9fa;
+    --tesoura: #ef476f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    text-align: center;
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: "Rubik", "Trebuchet MS", system-ui, sans-serif;
+}
+
+body::before {
+    content: "Pedra, Papel e Tesoura";
+    padding-bottom: 0.5em;
+    font-size: clamp(2rem, 8vw, 4.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    background: linear-gradient(
+            90deg,
+            var(--pedra) 0 33.33%,
+            var(--papel) 33.33% 66.66%,
+            var(--tesoura) 66.66% 100%
+        )
+        bottom / 100% 0.12em no-repeat;
+}
+
+body::after {
+    content: "✊ ✋ ✌️";
+    font-size: clamp(2.5rem, 10vw, 5rem);
+    letter-spacing: 0.15em;
+}
